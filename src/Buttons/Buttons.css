@@ -1,5 +1,4 @@
-.AddButton,
-.RemoveButton {
+.AddButton {
   height: 30px;
   width: 100px;
   border-radius: 10px;
@@ -10,8 +9,7 @@
   background-color: #333;
 }
 
-.AddButton:hover,
-.RemoveButton:hover {
+.AddButton:hover {
   cursor: pointer;
   background-color: #444;
 }

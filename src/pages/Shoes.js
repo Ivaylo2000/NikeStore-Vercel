@@ -1,4 +1,3 @@
-import { useDispatch } from "react-redux";
 import useDataFetching from "../Hooks/useDataFetching";
 import "./Clothes.css";
 import ClothingList from "../components/ClothingList";
@@ -8,15 +7,6 @@ const Shoes = () => {
     "https://shop-190b9-default-rtdb.firebaseio.com/clothes.json"
   );
 
-  const dispatch = useDispatch();
-
-  const addHandler = (shoe) => {
-    dispatch({
-      type: "Add",
-      payload: shoe,
-    });
-  };
-
-  return <ClothingList data={data} tag={"shoe"} onAddHandler={addHandler} />;
+  return <ClothingList data={data} tag={"shoe"} />;
 };
 export default Shoes;

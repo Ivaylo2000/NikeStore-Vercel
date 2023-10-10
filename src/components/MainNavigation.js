@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { calculateTotalPrice } from "./calculateTotalPrice";
 import nikelogowhite from "./nikelogowhite.png";
-
-import PostDataToFirebase from "../pages/proba";
 import "./MainNavigation.css";
+
 const MainNavigation = () => {
   const cartItems = useSelector((state) => state.items);
   const totalCartPrice = calculateTotalPrice(cartItems);
@@ -20,11 +19,8 @@ const MainNavigation = () => {
   return (
     <div className="topnav">
       <Link to="/" className="link">
-        <img className="nikeLogo" src={nikelogowhite} />
+        <img className="nikeLogo" src={nikelogowhite} alt="" />
       </Link>
-      {/* <p>
-        <PostDataToFirebase />
-      </p> */}
       <Link to="/products/tops" className="link">
         Tops
       </Link>

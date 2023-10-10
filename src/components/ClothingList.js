@@ -1,22 +1,19 @@
 import React from "react";
-import AddToCartButton from "../Buttons/AddToCartButton";
+import CardItem from "../components/CardItem";
 
-const ClothingList = ({ data, tag, onAddHandler }) => {
+const ClothingList = ({ data, tag }) => {
   return (
     <div className="clothesDiv">
       <ul className="clothesUl">
         {data.map((item) => {
           if (item.tag === tag) {
             return (
-              <li className="clothesList" key={item.id}>
-                <img src={item.src} alt={item.name} />
-                <h2>{item.name}</h2>
-                <h3>{item.price} лв.</h3>
-                <AddToCartButton
-                  text={"Add"}
-                  onAddToCart={() => onAddHandler(item)}
-                />
-              </li>
+              <CardItem
+                id={item.id}
+                src={item.src}
+                name={item.name}
+                price={item.price}
+              />
             );
           }
         })}

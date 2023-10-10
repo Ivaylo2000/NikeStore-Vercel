@@ -5,17 +5,13 @@ const useDataFetching = (url) => {
 
   useEffect(() => {
     const fetchData = async () => {
+      const response = await fetch(url);
       try {
-        const response = await fetch(url);
-        if (!response.ok) {
-          throw new Error("Network response problem");
-        }
-
         const fetchedData = await response.json();
         const dataArray = Object.values(fetchedData);
         setData(dataArray);
       } catch (error) {
-        console.error("Error fetching data: " + error);
+        throw new Error(error.message);
       }
     };
 

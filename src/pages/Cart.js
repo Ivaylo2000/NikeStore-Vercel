@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import AddToCartButton from "../Buttons/AddToCartButton";
-import RemoveFromCartButton from "../Buttons/RemoveFromCartButton";
+import Button from "../Buttons/Button";
 import { useDispatch } from "react-redux";
 import "./Clothes.css";
 
@@ -46,21 +45,16 @@ const Cart = () => {
             }, [])
             .sort((a, b) => a.id - b.id)
             .map((uniqueItem, index) => (
-              <li
-                className={`clothesList ${<h4 /> ? "clothesListCart" : ""}`}
-                key={index}
-              >
-                <img src={uniqueItem.src} />
+              <li className="clothesList clothesListCart" key={index}>
+                <img src={uniqueItem.src} alt="" />
                 <h2>{uniqueItem.name}</h2>
                 <h3>{uniqueItem.price * uniqueItem.count} лв.</h3>
                 <h4>Quantity: {uniqueItem.count}</h4>
                 <div className="buttonsHolder">
-                  <AddToCartButton
-                    text={"+"}
-                    onAddToCart={() => addHandler(uniqueItem)}
-                  />
-                  <RemoveFromCartButton
-                    onRemoveFromCart={() => {
+                  <Button text="+" onClick={() => addHandler(uniqueItem)} />
+                  <Button
+                    text="-"
+                    onClick={() => {
                       removeHandler(uniqueItem);
                     }}
                   />
