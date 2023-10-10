@@ -1,0 +1,69 @@
+img {
+  width: 80%;
+  height: 50%;
+}
+.clothesDiv {
+  margin: 70px 15px 15px 15px;
+}
+.clothesList {
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 20px 20px 0px;
+  color: #333;
+}
+.clothesUl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.clothesListCart > img {
+  height: 50%;
+  width: 70%;
+}
+
+.clothesListCart > h2,
+h3,
+h4,
+img {
+  margin: 0 0 20px 0;
+}
+.buttonsHolder {
+  width: 100px;
+}
+.buttonsHolder > button {
+  width: 50%;
+  border-radius: 0;
+}
+
+@media (max-width: 767px) {
+  .clothesDiv {
+    margin-top: 15px;
+    border: none;
+    width: 75%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clothesList {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 20px 40px;
+    color: #333;
+  }
+}

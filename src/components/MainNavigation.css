@@ -1,0 +1,63 @@
+.topnav {
+  background-color: #333;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.link {
+  padding: 0;
+  margin: 0;
+}
+.link {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  height: 50px;
+}
+.link:nth-last-child(-n + 2) {
+  float: right;
+}
+.link:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.nikeLogo {
+  width: 35px;
+  height: 35px;
+  margin: 0;
+}
+
+.link:nth-child(1):hover .nikeLogo {
+  content: url("nikelogoblack.png");
+}
+
+.link:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .topnav {
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .link {
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
