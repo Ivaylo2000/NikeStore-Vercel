@@ -26,8 +26,8 @@ const DUMMYDATA = [
   {
     id: "4",
     tag: "top",
-    src: "https://www.nike.com/bg/t/sportswear-club-long-sleeve-t-shirt-JMDvhL/AR5193-100",
-    name: "Nike SportSwear",
+    src: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/033a80a0-eca4-4415-bbab-622bd6e684ef/sportswear-repeat-fleece-sweatshirt-8sJLB3.png",
+    name: "Nike Sportswear",
     price: "60",
   },
   {
@@ -132,7 +132,7 @@ const DUMMYDATA = [
     id: "19",
     tag: "pant",
     src: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ngjeza7zfbdnpk6xlo6z/sportswear-club-joggers-FcQ46n.png",
-    name: "Nike Sportswear Club",
+    name: "Nike Sportswear",
     price: "100",
   },
   {
@@ -160,7 +160,7 @@ const DUMMYDATA = [
     id: "23",
     tag: "pant",
     src: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/468d8dd2-9686-4672-8036-8907ae814ced/jordan-brooklyn-fleece-trousers-PG82L9.png",
-    name: "Jordan Brooklyn Fleece",
+    name: "Jordan Fleece",
     price: "140",
   },
   {
@@ -203,21 +203,21 @@ const DUMMYDATA = [
     id: "29",
     tag: "jacket",
     src: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/1719b541-a6be-476b-b367-ef99909cf8d2/sportswear-repel-hooded-jacket-xxDzDb.png",
-    name: "Nike Sportswear Therma-FIT",
+    name: "Nike Therma-FIT",
     price: "250",
   },
   {
     id: "30",
     tag: "jacket",
     src: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/4c736df5-fc12-4278-82aa-ee3021c47b8c/sportswear-club-puffer-jacket-MX09dS.png",
-    name: "Nike Sportswear Club",
+    name: "Nike Sportswear",
     price: "390",
   },
   {
     id: "31",
     tag: "jacket",
     src: "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/dcfeb31e-62c1-497f-9f83-744dd1af87d6/windrunner-primaloft-hooded-puffer-jacket-LF2x2Z.png",
-    name: "Nike Windrunner PrimaLoft",
+    name: "Nike Windrunner",
     price: "450",
   },
   {
