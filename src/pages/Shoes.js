@@ -1,7 +1,7 @@
-import AddToCartButton from "../Buttons/AddToCartButton";
 import { useDispatch } from "react-redux";
 import useDataFetching from "../Hooks/useDataFetching";
 import "./Clothes.css";
+import ClothingList from "../components/ClothingList";
 
 const Shoes = () => {
   const data = useDataFetching(
@@ -17,28 +17,6 @@ const Shoes = () => {
     });
   };
 
-  return (
-    <>
-      <div className="clothesDiv">
-        <ul className="clothesUl">
-          {data.map((shoe) => {
-            if (shoe.tag === "shoe") {
-              return (
-                <li className="clothesList" key={shoe.id}>
-                  <img src={shoe.src} />
-                  <h2>{shoe.name}</h2>
-                  <h3>{shoe.price} лв.</h3>
-                  <AddToCartButton
-                    text={"Add"}
-                    onAddToCart={() => addHandler(shoe)}
-                  />
-                </li>
-              );
-            }
-          })}
-        </ul>
-      </div>
-    </>
-  );
+  return <ClothingList data={data} tag={"shoe"} onAddHandler={addHandler} />;
 };
 export default Shoes;

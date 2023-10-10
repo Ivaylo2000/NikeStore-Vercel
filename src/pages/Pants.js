@@ -1,4 +1,4 @@
-import AddToCartButton from "../Buttons/AddToCartButton";
+import ClothingList from "../components/ClothingList";
 import { useDispatch } from "react-redux";
 import useDataFetching from "../Hooks/useDataFetching";
 import "./Clothes.css";
@@ -16,28 +16,7 @@ const Pants = () => {
       payload: pant,
     });
   };
-  return (
-    <>
-      <div className="clothesDiv">
-        <ul className="clothesUl">
-          {data.map((pant) => {
-            if (pant.tag === "pant") {
-              return (
-                <li className="clothesList" key={pant.id}>
-                  <img src={pant.src} />
-                  <h2>{pant.name}</h2>
-                  <h3>{pant.price} лв.</h3>
-                  <AddToCartButton
-                    text={"Add"}
-                    onAddToCart={() => addHandler(pant)}
-                  />
-                </li>
-              );
-            }
-          })}
-        </ul>
-      </div>
-    </>
-  );
+
+  return <ClothingList data={data} tag={"pant"} onAddHandler={addHandler} />;
 };
 export default Pants;

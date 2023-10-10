@@ -8,6 +8,7 @@ import Tops from "./pages/Tops";
 import Cart from "./pages/Cart";
 import { Provider } from "react-redux";
 import store from "./ReduxLogic/reduxLogic";
+import ItemInfo from "./components/ItemInfo";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
+    // <ItemInfo/>
     <Provider store={store}>
       <RouterProvider router={router} />
     </Provider>
